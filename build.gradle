@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'wiki'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.2'
+    testImplementation('org.junit.jupiter:junit-jupiter-api:5.4.2')
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:5.4.2')
+}
+
+test {
+    useJUnitPlatform()
+}
